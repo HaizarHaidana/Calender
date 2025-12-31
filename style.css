@@ -1,0 +1,166 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("web.png");
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.calendar {
+  background: transparent;
+  backdrop-filter: blur (10px);
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  border: solid 1px white;
+  color: white;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.pen {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 370px;
+}
+
+.footer .brand {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.footer p {
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cal {
+  color: white;
+  text-align: center;
+}
+
+.header button {
+  cursor: pointer;
+}
+
+.days, .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.days div {
+  font-weight: bold;
+}
+
+.dates div {
+  padding: 8px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.today {
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+}
+
+.bu {
+  font-size: 36px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.bu:hover {
+  transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .calendar {
+  background: transparent;
+  backdrop-filter: blur (10px);
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  border: solid 1px white;
+  color: white;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.pen {
+  color: white;
+  text-align: center;
+  padding-top: 0;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cal {
+  color: white;
+  text-align: center;
+}
+
+.header button {
+  cursor: pointer;
+}
+
+.days, .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.days div {
+  font-weight: bold;
+}
+
+.dates div {
+  padding: 8px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.today {
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+}
+
+.footer {
+  padding-top: 180px;
+}
+}
